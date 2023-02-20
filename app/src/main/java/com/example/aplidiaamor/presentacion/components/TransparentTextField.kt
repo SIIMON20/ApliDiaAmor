@@ -1,6 +1,7 @@
 package com.example.aplidiaamor.presentacion.components
 
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.Text
@@ -39,7 +40,7 @@ fun TransparentTextField(
     visualTransformation: VisualTransformation = VisualTransformation.None
     ){
     TextField(
-        modifier = modifier.fillMaxSize() ,
+        modifier = modifier.fillMaxWidth() ,
         //numero de caracteres a tomar del control
     value = textFieldValue.value.take(maxChar ?:40),
         onValueChange = {textFieldValue.value=it},
