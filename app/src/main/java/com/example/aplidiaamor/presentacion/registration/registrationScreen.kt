@@ -205,7 +205,7 @@ fun registrationScreen(){
                     color = Color.Gray) //Linea divisora
                 //Botones adicionales de redes sociales
                 }//fin de la fila
-            Text(modifier = Modifier.padding(8.dp),
+            Text(modifier = Modifier.padding(9.dp),
                 text = "Login with",
                 style = MaterialTheme.typography.body1.copy(MaterialTheme.colors.primary),
                 textAlign = TextAlign.Center
