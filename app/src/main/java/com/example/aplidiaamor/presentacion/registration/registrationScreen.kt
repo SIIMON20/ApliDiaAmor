@@ -28,6 +28,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import com.example.aplidiaamor.presentacion.components.RoundedButton
+import com.example.aplidiaamor.presentacion.components.SocialMediaButton
 import com.example.aplidiaamor.presentacion.components.TransparentTextField
 
 @Composable
@@ -175,13 +176,12 @@ fun registrationScreen(){
                             fontWeight = FontWeight.Bold
                         )
                     ){
-                        append("Login")
+                        append("Log In")
                     }
                 },
                     onClick = {
                         //TODO
                     }) //Already have a Account
-
             }//fin de la columna interior
         Spacer(modifier = Modifier.height(16.dp))//espacio
         Column(verticalArrangement = Arrangement.spacedBy(2.dp)){
@@ -214,8 +214,14 @@ fun registrationScreen(){
             Spacer(modifier = Modifier.height(16.dp)) //espacio
             Column(modifier = Modifier.fillMaxWidth(),
                 verticalArrangement = Arrangement.spacedBy(8.dp),
-                horizontalAlignment = Alignment.CenterHorizontally) {
+                horizontalAlignment = Alignment.CenterHorizontally)
+            {
                 //TODO {Creamos un nuevo componente para los botones.}
+                SocialMediaButton(
+                    text = "Login with Email",
+                    onClick = {/*TODO*/},
+                    socialMediaColor = MaterialTheme.colors.primary
+                )
             }
         }//Fin de la columna exterior
     }//Fin del Box
